@@ -1,414 +1,559 @@
-<html><head><title>My Portfolio</title>
-<style>
-body {
-    text-align: center;
-    
-}
-#pageBorder{
-	background: #F5F5F5;
-    margin: 20px;
-
-}
-#wrap{
-	padding:20px;
-}
-.container .headerSection{
-
-}
-#header {
-    margin-top: 0;
-  
-    padding: 5px;
-}
-
-
-#navbar{
-	font-weight: 300;
-      text-transform: uppercase;  
-font-family:"freightsans_regular",sans-serif;
- letter-spacing: 3px;
-}
-#navbar p{
-	 width: 14%;
-	float: left;
-	margin: 3%;
-      }
-
-
-
-#navbar a {
-   
-    padding-bottom: 7px;
-    display: block;
-    text-decoration: none;
-    color: #424949;
-    border-bottom: 1px solid #7a7878;
-}
-#navbar p img{
-	margin-top: -30px;
-}
-
-div .name{
-	font-size: 250%;
-	 margin-top: 180px;
-	 font-family:"freightsans_regular",sans-serif;
-	 word-spacing: 8px;
-	  
-}
-div .name p{
-	font-weight: 700;
-
-}
-@media(max-width: 700px){
-     #navbar p img{
-     display: none;
-     }
-     #navbar p{
-     width: 100%;
-     float: none;
-     margin: 3%;
-     font-size: 13px;
-     }
-    div .name{
-    font-size: 150%;
-     margin-top: 60px;
-     }
-    
-}
-div .head p{
-	font-size: 70%;
-	font-family:"freightsans_regular",sans-serif;
-	font-weight: 300;
-	 letter-spacing: 2px;
-}
-.lnk{
-		width: 100%;
-		text-align: center;
-		word-spacing: 10px;
-		font-size: 100%;
-	font-family:"freightsans_regular",sans-serif;
-	font-weight: 300;
-	 letter-spacing: 2px;
-	 text-align: center;
-	}
-
-
-#hex1{
-	width: 100%;
-	height: 25%;
-	margin-top: 50px;
-
-
-}
-#hex2{
-	width: 100%;
-	height: 25%;
-
-}
-#hexagon1{
-	width: 40%;
-	height: 100%
-}
-#hexagon2{
-	margin-top: -55px;
-	width: 53%;
-	height: 100%;
-}
-div #hexagon1 p img{
-	float: left;
-	width: 28.2%;
-	height: 100%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	
-	
-
-}
-
-
-
-div #hexagon2 p img{
-	float: left;
-	width: 21%;
-	height: 100%;
-	margin-left: 2%;
-	margin-right: 2%;
-}
-
-#project{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin1 {margin-bottom: 55px;
+    padding-top: 65px;}
+  .margin {margin-bottom: 45px;
+    padding-bottom: 15px;}
+    .mainpg{
+      width: 100%;
+      height: 100%;
+    }
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    border-bottom-left-radius: 
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  .resume{
     padding: 20px;
-    display: none;
-}
+    background-color: #1abc9c;
+    margin-top: 45px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: inline-block;
+    text-decoration:none;
 
-#project1{
-    padding:10px;
+
+  }
+  .resume a{
+    text-decoration: none;
+    color:white;
+  }
+  .resume:hover{
+    background-color:#2f2f2f; 
    
-}
-@media(max-width: 600px){
-  #hexagon1{
-  width: 60%;
-  height: 60%
-}
-#hexagon2{
-  margin-top: -95px;
-  width: 85%;
-  height: 60%;
-}
-#project{
-    padding: 0px;
-    margin-top: -40px;
-    
-}
-}
-
-
-
-
-
-
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;margin:0}
-.mySlides {display:none;
-padding-bottom: 140px;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.prev{
-	left: 0;
-   background-color: rgba(0,0,0,0.4);
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 30%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-   background-color: rgba(0,0,0,0.4);
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color:#424949;
-  font-size: 14px;
-  padding: 15px 12px;
-  position: absolute;
-  background: white;
-  width: 100%;
-  text-align: center;
+  }
  
+  .panel {
+    border: 1px solid white; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
 }
-@media (max-width:600px){
-  .text{font-size: 10px;
-    padding: 6px 6px;
+
+
+
+
+
+.panel-heading {
+    color: #595959 !important;
+   padding: 1px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 20px;
+}
+.panel-body{
+  color: #696969;
+}
+.thumbnail{
+  border: 1px solid white;
+  border-radius:0;
+}
+.imgg:hover{
+   background-color: rgba(0,0,0,0.5);
+   border: 1px solid black;
+}
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: .6s;
+      -webkit-animation-duration: .6s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  .slideanim1 {visibility:hidden;}
+  .slide1 {
+      animation-name: slide1;
+      -webkit-animation-name: slide1;
+      animation-duration: .6s;
+      -webkit-animation-duration: .6s;
+      visibility: visible;
+  }
+  @keyframes slide1 {
+    0% {
+      opacity: 0;
+      transform: translateX(-60%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes slide1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-60%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  .slideanim2 {visibility:hidden;}
+  .slide2 {
+      animation-name: slide2;
+      -webkit-animation-name: slide2;
+      animation-duration: .6s;
+      -webkit-animation-duration: .6s;
+      visibility: visible;
+  }
+  @keyframes slide2 {
+    0% {
+      opacity: 0;
+      transform: translateX(60%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes slide2 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(60%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  .imggg:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+.imgCont {
+  display: inline-block;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media(max-width: 800px){
+  .imggg{
+    width: 45px;
+    height: 45px;
+   
+  }
+  .educationimg{
+      width:80%;
+      display: inline;
+      margin-bottom: 40px;
+  }
+  .gmailimgg{
+    width: 100px;
+    height: 100px;
 
   }
-  .prev, .next{
-    font-size: 8px;
-    padding: 10px;
-  }
+ 
+  
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </style>
 </head>
 <body>
-	<div id="pageBorder">
-		<div id="wrap" class="container">
-			<header id="header" class="headerSection">
-				    <div class="head"><p>PORTFOLIO</p></div>
-                    <div id="navbar">
-					    <p><a href="index.html">home</a></p>
 
-					    <p><a href="#project" onclick="show()">PROJECTS</a></p>
-
-					    <p><img src="./images/hello.png" width="77%"></p>
-					    <p><a href="https://drive.google.com/open?id=0B5bFmy3jX3MQT1lWbHcxakJfbXc" target="_blank">RESUME</a></p>
-					    <p><a href="contact.html">CONTACT</a></p>
-				    </div>
-			        <div class="name"><p>I'M ATUL KUMAR</p></div>
-                    
-			        <div class="lnk"><p>PROFILE LINKS</p></div>
-			        <div id="hex">
-			        	
-			        	<div id="hex1">
-			            <center>
-			            <div id="hexagon1">
-			            	
-				    	    <p><a href="https://github.com/atul-kumar02"><img src="./images/git2.png"  ></a></p>
-	                        <p><a href="https://www.facebook.com/atulkumar291997"><img src="./images/facebook2.png" ></a></p>
-	                        <p><a href=""><img src="./images/gmail2.png"  ></a></p>
-	                        
-                        </div></center> 
-
-                        </div>
-                        <br>
-                        <div id="hex2">
-                        <center>
-                        <div id="hexagon2">
-			            	
-				    	    <p><a href="http://www.spoj.com/users/atul_k_p/"><img src="./images/spoj2.png"  ></a></p>
-	                        <p><a href="https://www.hackerearth.com/@atul.kumar.prajapati02"><img src="./images/hackerearth2.png" ></a></p>
-	                        <p><a href="https://www.linkedin.com/in/atul-kumar-55b34a132/"><img src="./images/linkedin2.png"  ></a></p>
-	                        <p><a href="https://twitter.com/atul_k_p"><img src="./images/tweet.png"></a></p>
-	                        
-	                        
-                        </div>
-                        </center> 
-                        </div>
-                        
-                    </div>
-            </header>
-
-			       
-		</div>
-        <div id="project" >
-            <div id="project1" class="tabcontent">
-                <div class="slideshow-container">
-
-                	<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <a href="https://eventalerts.000webhostapp.com/" target="_blank"><img  src="./images/2.png" style="width:100%"></a>
-  <div class="text" ><p>NITH EVENT-ALERTS</p>This project was developed to upload different events information organised
-by different clubs of NITH. Where a student who is interested can register for the participation
-of the events.Developed in html, CSS, PHP, MySQL, Ajax, js.<a href="https://github.com/atul-kumar02/Event-Alerts" target="_blank">Click to visit github project </a></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <a href="./html/hos.html" target="_blank"><img src="./images/1.png" style="width:100%"></a>
-  <div class="text"><p>HOSPITAL APPOINTMENT SYSYEM</p>It is the website,developed in an Online
-Project Hackathon(Code Healthy with Open Shift) Organized by Devpost.It was developed in
-HTML5,CSS for front-end and PHP for back-end. The aim of this project is to fix online
-doctor appointment. <a href="https://github.com/atul-kumar02/hosys-DevPost-project" target="_blank">Click to visit github project </a></div>
-</div>
-
-
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <img src="./images/4.png" style="width:100%">
-  <div class="text"><p>CAR RACE</p>A Graphical small game for computer which was the part of gaming console
-
-project(having many other small games) developed in second year third semester as a semester
-
-project.It was made using OpenGL and C++ . <a href="https://github.com/atul-kumar02/carrace-opengl" target="_blank">Click to visit github project</a></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <img src="./images/5.png" style="width:100%">
-  <div class="text"><p>BUNK APP(Android App)</p>An android app which was developed as a project of summer training project(Java
-
-And Android).This app keeps the records of no of bunks in the class in any subject. <a href="" target="_blank">Click to visit github project</a></div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-
-            </div>
-
-        </div>
-
-
-       
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+         <li><a href="#about">ABOUT</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#where">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center mainpg" id="who">
+  <h3 class="margin1">Hello!</h3>
+  <img src="atulkumar.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
+  <div>
+    <div class="col-sm-4"></div>
+    <div id="myCarousel" class="carousel slide text-center col-sm-4" data-ride="carousel">
+  <!-- Indicators -->
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h3>I'm Atul Kumar</h3>
+    </div>
+    <div class="item">
+      <h3>I do coding</h3>
+    </div>
+    <div class="item">
+      <h3>I do web Development</h3>
+    </div>
+  </div>
+
+ 
+</div>
+<div class="col-sm-4"></div>
+  </div>
+ 
+</div>
+<div class="container-fluid bg-3 text-center" id="about">    
+  <h3 class="margin">About Me</h3>
+  <div class="row slideanim">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <p style="border:1px solid #474e5d;padding:20px;color:#1abc9c;border-bottom-left-radius: 50px;border-top-right-radius:40px; word-spacing:1px;text-align;left;">Hello, I am atul Kumar. I am a CSE (dual degree) student in National Institute of trechnology Hamirpur Himachal Pradesh India. I am a coder and web developer.<br>My current CGPI is 8.4 and my last semester(6th) SGPI is 9.16</p>
+      
+      
+    </div>
+     <div class="col-sm-1"></div>
+     <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+     <p class="resume"><a href="https://drive.google.com/open?id=0B5bFmy3jX3MQT1lWbHcxakJfbXc" target="_blank">Download Resume</a></p>
+      
+    </div>
+     <div class="col-sm-4"></div>
+     
+    
+  </div>
+</div>
+
+
+<div class="container-fluid bg-1 text-center">
+<h3 class="margin">Educational Details</h3>
+<div class="row" style="margin-top:20px;">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-5 slideanim1"><img src="college.png" class="img-responsive  educationimg" width="330px" height="330px"></div>
+  <div class="col-sm-5 slideanim2" style="border:10px solid #474e5d;"><div><h4>Bachelor of Technology</h4>
+<p style="font-size:13px;">Computer Science and Engineering</p>
+<p style="font-size:13px;">National Institute of Technology Hamirpur</p>
+<p style="font-size:13px;">2014 -19</p>
+<p style="font-size:13px;">CGPI: 8.4/10</p></div>
+<div class="row">
+  <div class="col-sm-6"><h4>Senior Secondary</h4>
+<p style="font-size:13px;">L.V.M Inter College</p>
+<p style="font-size:13px;">2011 -13</p>
+<p style="font-size:13px;">Percentage: 91.2%</p></div>
+  <div class="col-sm-6"><h4>High school</h4>
+<p style="font-size:13px;">L.V.M Inter College</p>
+<p style="font-size:13px;">2010-11</p>
+<p style="font-size:13px;">Percentage: 85.47%</p></div>
+</div>
+</div>
+  <div class="col-sm-1"></div>
+</div>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="what">
+  <h3 class="margin">What I know?</h3><br>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>Programming</h3>
+        </div>
+        <div class="panel-body">
+        <p>C</p>
+        <p>C++</p>
+        <p>Core Java</p>
+        <p>Javascript</p>
+        </div>
+       
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>Web Tech</h3>
+        </div>
+        <div class="panel-body">
+          <p>HTML5</p>
+        <p>CSS</p>
+        <p>PHP, NodeJS</p>
+        <p>MySQL</p>
+        </div>
+      
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>Others</h3>
+        </div>
+        <div class="panel-body">
+         <p>GIT</p>
+        <p>Machine Learning</p>
+        <p>Inkscape</p>
+        <p>photoshop</p>
+        </div>
+       
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid bg-1 text-center">
+ <h3>Projects</h3><br>
+  <div class="row slideanim" style="margin-top:20px;">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+ 
+     <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail imgg">
+        <a href="" target="_blank">
+        <img src="1.png" >
+       
+        <p style="color:#898989;padding-top:13px;font-size:15px;">HospitalAppointmentSys</p>
+         </a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail imgg">
+         <a href="" target="_blank">
+        <img src="2.png" >
+        
+        <p style="color:#898989;padding-top:13px;font-size:15px;">Events-alert</p>
+         </a>
+      </div>
+      </div>
+  
+    <div class="col-sm-4">
+      <div class="thumbnail imgg">
+         <a href="" target="_blank">
+        <img src="3.png">
+       
+       <p style="color:#898989;padding-top:13px;font-size:15px;">TodoApp</p>
+      </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="thumbnail imgg">
+         <a href="" target="_blank">
+        <img src="4.png">
+     
+       <p style="color:#898989;padding-top:13px;font-size:15px;">OpenGL_CarsGame</p>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail imgg">
+         <a href="" target="_blank">
+        <img src="5.png">
+        
+       <p style="color:#898989;padding-top:13px;font-size:15px;">BunkCount_Android App</p>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail imgg">
+         <a href="" target="_blank">
+        <img src="6.png">
+      
+       <p style="color:#898989;padding-top:13px;font-size:15px;">Portfolio</p>
+     </a>
+      </div>
+    </div>
+ 
+    </div>
+<div class="col-sm-1"></div>
+  </div>
+ </div>
+</div>
 
 
 
 
 
-    <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="where">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row slideanim">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+  <div class="row" style="text-align: center;">
+    <div class="col-sm-3 imgCont">
+     <a>
+      <img src="facebook1.png" class="img-responsive imggg" alt="Image">
+     </a>
+    </div>
+    <div class="col-sm-3 imgCont"> 
+     <a>
+      <img src="git1.svg" class="img-responsive imggg" alt="Image">
+     </a>
+    </div>
+    <div class="col-sm-3 imgCont"> 
+      <a>
+      <img src="twitter1.png" class="img-responsive imggg" alt="Image">
+      </a> 
+    </div>
+     <div class="col-sm-3 imgCont"> 
+      <a>
+      <img src="linkedin1.png" class="img-responsive imggg" alt="Image">
+      </a>
+    </div>
+  </div>
+</div>
+<div class="col-sm-4"></div>
+</div>
+</div>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <div class="row slideanim">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="display:inline;"><a href="mailto:atul.kumar.prajapati02@gmail.com" target="_top"><img src="gmail.png" class="gmailimgg" width="100px" height="100px"></a></div>
+    
+    <div class="col-sm-4"></div>
+  </div> 
+</footer>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+      // Store hash
+      var hash = this.hash;
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-function show(){
-	document.getElementById("project").style.display="block";
-}
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 500) {
+          $(this).addClass("slide");
+        }
+    });
+     $(".slideanim1").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 500) {
+          $(this).addClass("slide1");
+        }
+    });
+      $(".slideanim2").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 500) {
+          $(this).addClass("slide2");
+        }
+    });
+  });
+})
 </script>
 </body>
-
 </html>
