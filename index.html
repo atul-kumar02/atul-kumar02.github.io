@@ -11,14 +11,18 @@
   <style>
   body {
       font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
+      width: 100%;
+      height: 100%;
   }
+  html{
+    width: 100%;
+    height: 100%;
+  }
+
   p {font-size: 16px;}
-  .margin1 {margin-bottom: 55px;
-    padding-top: 65px;}
+  .margin1 {margin-bottom: 50px;}
   .margin {margin-bottom: 45px;
-    padding-bottom: 15px;}
+   }
     .mainpg{
       width: 100%;
       height: 100%;
@@ -59,7 +63,7 @@
   .resume{
     padding: 20px;
     background-color: #1abc9c;
-    margin-top: 45px;
+    margin-top: 60px;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     display: inline-block;
@@ -75,7 +79,16 @@
     background-color:#2f2f2f; 
    
   }
- 
+  .aboutme{
+    width: 100%;
+    height: 100%;
+  }
+
+  .education{
+    width: 100%;
+    height: 100%;
+  }
+  
   .panel {
     border: 1px solid white; 
     border-radius:0;
@@ -217,7 +230,16 @@
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media(max-width: 800px){
+@media(max-width: 767px){
+  .mainpg{
+    width: none;
+    height: none;
+  }
+  .aboutme{
+    width: none;
+    height: none;
+  }
+
   .imggg{
     width: 45px;
     height: 45px;
@@ -233,6 +255,8 @@
     height: 100px;
 
   }
+  .portfolioimg{display: none;}
+  .computerimg{display: none;}
  
   
 }
@@ -242,7 +266,7 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -262,12 +286,20 @@
     </div>
   </div>
 </nav>
+-->
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center mainpg" id="who">
-  <h3 class="margin1">Hello!</h3>
-  <img src="atulkumar.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
-  <div>
+  <h1 class="margin1">Hello.</h1>
+  <div class="row">
+   
+    <div class="col-sm-4 portfolioimg"><img src="portfolio.svg" width="80%;"></div>
+    <div class="col-sm-4">  <img src="atulkumar.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250"></div>
+    <div class="col-sm-4 computerimg"><img src="code.svg" width="80%;"></div>
+  
+
+  </div>
+  <div class="row">
     <div class="col-sm-4"></div>
     <div id="myCarousel" class="carousel slide text-center col-sm-4" data-ride="carousel">
   <!-- Indicators -->
@@ -290,31 +322,31 @@
   </div>
  
 </div>
-<div class="container-fluid bg-3 text-center" id="about">    
+<div class="container-fluid bg-2 text-center aboutme">    
   <h3 class="margin">About Me</h3>
-  <div class="row slideanim">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <p style="border:1px solid #474e5d;padding:20px;color:#1abc9c;border-bottom-left-radius: 50px;border-top-right-radius:40px; word-spacing:1px;text-align;left;">Hello, I am atul Kumar. I am a CSE (dual degree) student in National Institute of trechnology Hamirpur Himachal Pradesh India. I am a coder and web developer.<br>My current CGPI is 8.62 and my last semester(8th) SGPI is 9.45</p>
-      
-      
+  <div class="row slideanim" style="margin-top:70px;">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <p style="border:1px solid #1abc9c;padding:30px;color:#1abc9c;border-bottom-left-radius: 50px;border-top-right-radius:40px; word-spacing:2px; line-height:2">Hello, I am atul Kumar. I am a CSE Dual Degree (5th year) student in National Institute of Technology Hamirpur, Himachal Pradesh India.<br> I am a coder, a web designer and a web developer.<br>My current <strong>CGPI is 8.62</strong> and my last semester(8th)<strong>SGPI is 9.45</strong></p>
     </div>
-     <div class="col-sm-1"></div>
-     <div class="col-sm-4"></div>
+    <div class="col-sm-2"></div>
+  </div>
+
+
+  <div class="row">  
+    <div class="col-sm-4"></div>
     <div class="col-sm-4">
      <p class="resume"><a href="https://drive.google.com/open?id=0B5bFmy3jX3MQT1lWbHcxakJfbXc" target="_blank">Download Resume</a></p>
-      
     </div>
-     <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
      
-    
   </div>
 </div>
 
 
-<div class="container-fluid bg-1 text-center">
+<div class="container-fluid bg-1 text-center education">
 <h3 class="margin">Educational Details</h3>
-<div class="row" style="margin-top:20px;">
+<div class="row" style="margin-top:70px;">
   <div class="col-sm-1"></div>
   <div class="col-sm-5 slideanim1"><img src="college.png" class="img-responsive  educationimg" width="330px" height="330px"></div>
   <div class="col-sm-5 slideanim2" style="border:10px solid #474e5d;"><div><h4>Bachelor of Technology</h4>
@@ -338,7 +370,7 @@
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center" id="what">
+<div class="container-fluid bg-2 text-center">
   <h3 class="margin">What I know?</h3><br>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
@@ -462,11 +494,11 @@
 
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center" id="where">    
+<div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Where To Find Me?</h3><br>
   <div class="row slideanim">
-  <div class="col-sm-4"></div>
-  <div class="col-sm-4">
+  <div class="col-sm-5"></div>
+  <div class="col-sm-2">
   <div class="row" style="text-align: center;">
     <div class="col-sm-3 imgCont">
      <a>
@@ -490,15 +522,15 @@
     </div>
   </div>
 </div>
-<div class="col-sm-4"></div>
+<div class="col-sm-5"></div>
 </div>
 </div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <div class="row slideanim">
+  <div class="row">
     <div class="col-sm-4"></div>
-    <div class="col-sm-4" style="display:inline;"><a href="mailto:atul.kumar.prajapati02@gmail.com" target="_top"><img src="gmail.png" class="gmailimgg" width="100px" height="100px"></a></div>
+    <div class="col-sm-4" style="display:inline;"><a href="mailto:atul.kumar.prajapati02@gmail.com" target="_top"><img src="gmail.png" class="gmailimgg" width="50px" height="50px"></a></div>
     
     <div class="col-sm-4"></div>
   </div> 
