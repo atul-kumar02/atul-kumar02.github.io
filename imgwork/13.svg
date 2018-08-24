@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="550.85425"
-   height="545.42712"
+   height="427.83923"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -26,7 +26,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.1055556"
      inkscape:cx="270.90452"
-     inkscape:cy="274.52262"
+     inkscape:cy="147.25785"
      inkscape:document-units="px"
      inkscape:current-layer="g3861"
      showgrid="false"
@@ -57,18 +57,17 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.90452262,-511.45768)">
+     transform="translate(0.90452132,-558.49282)">
     <g
        id="g3861"
        transform="matrix(1.4064315,0,0,1.4064315,-136.97796,-191.94818)">
       <rect
          style="color:#000000;fill:#d7f4ee;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect2999"
-         width="550.85425"
-         height="545.42712"
-         x="-0.9045226"
-         y="-0.90450084"
-         transform="matrix(0.71101934,0,0,0.71101934,97.393979,500.77829)" />
+         width="391.66803"
+         height="304.20197"
+         x="96.750847"
+         y="533.57806" />
       <path
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
